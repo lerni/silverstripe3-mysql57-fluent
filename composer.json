@@ -1,0 +1,30 @@
+{
+    "name": "lerni/silverstripe3-mysql57-fluent",
+    "description": "A patch for SilverStripe to mimic the MySQL-Mode ANSI as with MySQL <5.7.x",
+    "type": "silverstripe-patch",
+    "homepage": "http://github.com/lerni/silverstripe3-mysql57-fluent",
+    "keywords": ["silverstripe", "cache", "patch"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Lukas Erni",
+            "email": "le@kraftausdruck.ch"
+        }
+    ],
+    "support": {
+        "issues": "http://github.com/lerni/silverstripe3-mysql57-fluent"
+    },
+    "require": {
+        "netresearch/composer-patches-plugin": "^1.2.1"
+    },
+    "extra": {
+        "patches": {
+            "silverstripe/framework": [
+                {
+                    "title": "[PATCH] A patch for SilverStripe to mimic the MySQL-Mode ANSI as with MySQL <5.7.x (remove ONLY_FULL_GROUP_BY)",
+                    "url": "https://gist.githubusercontent.com/lerni/d7a61863e8c4842d52aaa14c8a2f5280/raw/ecf2b8c554985901f85587d16da6ce909b78fabc/%255BPATCH%255DA%2520patch%2520for%2520SilverStripe%2520to%2520mimic%2520the%2520MySQL-Mode%2520ANSI%2520as%2520with%2520MySQL%2520%253C5.7.x%2520(remove%2520ONLY_FULL_GROUP_BY)"
+                }
+            ]
+        }
+    }
+}
